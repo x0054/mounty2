@@ -42,11 +42,14 @@ chmod 755 /usr/local/bin/mounty
 Sometimes it's just easier to point and click. For these instances Mounty has a little helper app created in Automator. Using it is simple.
 
 1. Download [mounty-v1.0-with-helper.zip](https://github.com/x0054/mounty2/releases/download/1.0/mounty-v1.0-with-helper.zip) from releases. Unzip and install the helper app by dragging Mounty.app to your `Applications` directory.
-2. Create an empty directory where you would like to mount you remote share.
+2. Create an empty directory where you would like to mount your remote share.
 3. Place in the empty directory a text file with an extension of `.mount`. Something like `share.mount` would work well.
-4. Edit the `share.mount` file an on the first line enter the share location like so `smb://user@server/share`.
-5. (You only need to do this ones) Right click on the new `share.mount` file and click "Get Info". In the popup window, in the "Open with" section, select Mounty helper app from the drop down menu and then click "Change All..." button underneath.
-6. Now simply double click the `share.mount` file. You will see a spinning gear in the menu bar, and shortly your share will be mounted inside the folder where `share.mount` file was located.
+4. Edit the `share.mount` file and on the first line enter the share location like so `smb://user@server/share`. Make sure you only have one line in the text file and save the file. 
+5. (You only need to do this once) Right click on the new `share.mount` file and click "Get Info." In the popup window, in the "Open with" section, select Mounty helper app from the drop down menu and then click the "Change All..." button underneath.
+6. Now simply double click on the `share.mount` file. You will see a spinning gear in the menu bar, and shortly your share will be mounted inside the folder where the `share.mount` file was located.
 
 *Note: You will be kicked out of the folder as soon as it's mounted. Don't worry, your `share.mount` file isn't gone, it's simply hidden by the contents of the mounted share. As soon as you unmount the share, you will see the `share.mount` file again.*
 
+## License
+
+Released under the MIT License.
